@@ -42,7 +42,8 @@ export class TransactionListComponent implements OnInit {
       if (this.queryType === 'blockHash') {
         if (
           this.chainNetwork.chain === 'BTC' ||
-          this.chainNetwork.chain === 'BCH'
+          this.chainNetwork.chain === 'BCH' ||
+          this.chainNetwork.chain === 'KVA'
         ) {
           this.fetchBlockTxCoinInfo(1);
         } else {
@@ -60,7 +61,8 @@ export class TransactionListComponent implements OnInit {
 
         if (
           this.chainNetwork.chain === 'BTC' ||
-          this.chainNetwork.chain === 'BCH'
+          this.chainNetwork.chain === 'BCH' ||
+          this.chainNetwork.chain === 'KVA'
         ) {
           this.addrProvider
             .getAddressActivityCoins(this.queryValue, this.chainNetwork)
