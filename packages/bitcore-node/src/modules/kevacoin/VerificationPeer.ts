@@ -4,7 +4,7 @@ import { ITransaction } from '../../models/baseTransaction';
 import { BitcoinBlockStorage } from '../../models/block';
 import { CoinStorage, ICoin } from '../../models/coin';
 import { TransactionStorage } from '../../models/transaction';
-import { BitcoinP2PWorker } from '../../modules/bitcoin/p2p';
+import { BitcoinP2PWorker } from '../../modules/kevacoin/p2p';
 import { ChainStateProvider } from '../../providers/chain-state';
 import { ErrorType, IVerificationPeer } from '../../services/verification';
 

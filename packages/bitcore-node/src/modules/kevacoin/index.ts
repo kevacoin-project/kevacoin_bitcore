@@ -6,7 +6,7 @@ import { VerificationPeer } from './VerificationPeer';
 export default class KevacoinModule extends BaseModule {
   constructor(services: BaseModule['bitcoreServices']) {
     super(services);
-    services.Libs.register('KVA', 'bitcore-lib-kva', 'bitcore-p2p');
+    services.Libs.register('KVA', 'bitcore-lib-kva', 'bitcore-p2p-kva');
     services.P2P.register('KVA', BitcoinP2PWorker);
     services.CSP.registerService('KVA', new BTCStateProvider());
     services.Verification.register('KVA', VerificationPeer);

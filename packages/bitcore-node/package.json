@@ -85,6 +85,7 @@
     "bitcore-lib": "^8.20.3",
     "bitcore-lib-cash": "^8.20.3",
     "bitcore-lib-kva": "^8.20.3",
+    "bitcore-p2p-kva": "^8.20.3",
     "bitcore-p2p": "^8.20.3",
     "bitcore-p2p-cash": "^8.20.3",
     "bitcore-wallet-client": "^8.20.3",
