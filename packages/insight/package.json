@@ -29,7 +29,7 @@
     "build:prod": "IONIC_ENV=prod ENV=prod CHAIN=KVA NETWORK=mainnet API_PREFIX=https://insight.kevacoin.org/api npm run ionic:build",
     "serve:prod": "npm run clean && npm run build:prod && npm run serve",
     "serve": "serve www",
-    "ionic:build": "ionic-app-scripts build --prod",
+    "ionic:build": "ionic-app-scripts build --minifyjs --minifycss",
     "ionic:serve": "ionic-app-scripts serve --port 8200",
     "postinstall": "./node_modules/.bin/webdriver-manager update --gecko false",
     "start": "npm run ionic:serve",
